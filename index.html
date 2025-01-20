@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Qui suis-je ?</h2>
+        <p>Bonjour, je suis un développeur web passionné par les nouvelles technologies. Voici quelques-uns de mes projets.</p>
+    </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projet">
+            <h3>Nom du Projet 1</h3>
+            <img src="images/projet1.jpg" alt="Projet 1">
+            <p>Description du projet 1. Ce projet consiste à...</p>
+        </div>
+
+        <div class="projet">
+            <h3>Nom du Projet 2</h3>
+            <img src="images/projet2.jpg" alt="Projet 2">
+            <p>Description du projet 2. Ce projet consiste à...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="mailto:contact@votremail.com" method="post" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon nom</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
